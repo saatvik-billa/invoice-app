@@ -1,0 +1,29 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' type='text/css' href='css/normalize.css')
+  link(rel='stylesheet' type='text/css' href='css/grid.css')
+  link(rel='stylesheet' type='text/css' href='css/login.css')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap' rel='stylesheet')
+  title Invoice Application
+section.login-signup-main
+  .row.whole-box
+    .col.span-1-of-2.login
+      h2 Administrator Login
+      .information-box
+        form#admin-login(action='')
+          label(for='us') Username: 
+          input#us(type='text' name='us')
+          label(for='pw') Password: 
+          input#pw(type='password' name='pw')
+          button.submit(name='admin-login' type='submit') Log In
+    .col.span-1-of-2.invoice-details
+      h2 Check Invoice Details and Pay
+      .information-box
+        form#check-invoice(action='#')
+          label(for='invoice-num') Invoice Number: 
+          input#invoice-num(type='text' name='invoice-num')
+          button.submit(name='check' type='submit') View Details
+script(src='js/bundle.js')

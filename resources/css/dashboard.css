@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto; /* makes the row centered */
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 100%; 
+    padding: 0px; 
+    margin: 0px;  
+    background-color: cadetblue;
+}
+
+header {
+    height: auto;
+    background-size: cover; 
+    background-position: center;
+}
+
+.clearfix {zoom : 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block; 
+    height: 0;
+    visibility: hidden;
+}
+
+/* LANDING PAGE */
+
+.tagline {
+    background-color: #00cec9;
+    padding: 0px 10px; 
+    border-radius: 10px; 
+    margin-top: 30px;
+    margin-bottom: 10px; 
+}
+
+.tagline h1 {
+    font-weight: 400;
+}
+
+.main-dashboard {
+    height: auto;
+}
+
+.main-menu, .viewing-box {
+    background-color: #81ecec;
+    height: auto; 
+    border-radius: 20px;
+}
+
+.main-menu {
+    width: 30%;
+}
+
+.main-menu h2, .viewing-box h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.menu-items {
+    list-style: none;
+}
+
+.menu-items li {
+    margin: 20px 20px; 
+    background-color: #22a6b3;
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+.menu-items li:hover {
+    background-color: #7ed6df;
+}
+
+.menu-items p {
+    display: inline-block;
+    margin-left: 10px; 
+    transform: translateY(-30%);
+}
+
+ion-icon {
+    font-size: 32px; 
+}
+
+.viewing-box {
+    width: 69%; 
+    margin-left: 1%;
+}
+
+.invoice-item, .customer-item, .paid-item {
+    text-align: center;
+    margin: 10px 20px; 
+    padding: 20px;
+    border-radius: 20px;
+    background-color: darkgray;
+}
+
+.viewing-box input, .viewing-box textarea {
+    display: block;
+}
+
+#description, #message {
+    width: 500px; 
+    height:100px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.viewing-box input, .viewing-box select, .viewing-box button, .viewing-box textarea {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 5px;  
+}
+
+.viewing-box button {
+    padding: 5px;
+    display: block; 
+}
+
+.viewing-box h3 {
+    margin-left: 20px;
+    margin-bottom: 10px; 
+}
+
+.submit-button {
+    display: block;
+    float: right;
+    margin-right: 20px;   
+}

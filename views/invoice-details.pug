@@ -1,0 +1,37 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' type='text/css' href='/css/normalize.css')
+  link(rel='stylesheet' type='text/css' href='/css/grid.css')
+  link(rel='stylesheet' type='text/css' href='/css/invoice-details.css')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap' rel='stylesheet')
+  title Invoice Details | #{invoice.number}
+
+mixin itemCard(description, price, quantity)
+    ul.main-details
+      li Description: #{description}
+      li Unit Price: $#{price}
+      li Quantity: #{quantity}
+      li ----------------------
+
+section.login-signup-main
+.row.outer-box
+    h1 Invoice Details
+    ul.intro-details
+        li Customer Name: #{invoice.customer.name}
+        li Invoice Number: #{invoice.number}
+        li Reason for Billing: #{invoice.reason}
+    h2 Items
+    p ----------------------
+    each item in invoice.items
+        +itemCard(item.description, item.amount, item.quantity)
+
+    p Total: $#{invoice.balance_due}
+    if !invoice.date_paid
+        button#pay-button(name='pay-button' type='button') Pay Now
+    else
+        - var date = invoice.date_paid
+        p Paid: #{(date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear()}
+script(src='/js/bundle.js')

@@ -1,0 +1,25 @@
+{
+  "name": "invoice_application",
+  "version": "1.0.0",
+  "description": "invoice application for computer science ia",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "watch:js": "parcel watch ./resources/js/index.js --out-dir ./resources/js --out-file bundle.js --no-hmr",
+    "build:js": "parcel build ./resources/js/index.js --out-dir ./resources/js --out-file bundle.js"
+  },
+  "author": "saatvik billa",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.16",
+    "pug": "^3.0.2",
+    "seedrandom": "^3.0.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

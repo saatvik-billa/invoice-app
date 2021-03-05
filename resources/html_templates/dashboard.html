@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="row tagline">
+            <h1>Hello Jennifer, here is your dashboard</h1>
+        </div>
+    </header>
+    <section class="main-dashboard">
+        
+        <div class="row">
+            <div class="col span-1-of-2 main-menu">
+                <h2>Menu</h2>
+                <ul class="menu-items">
+                    <li id="home"><ion-icon name="home-outline"></ion-icon> <p>Home</p></li>
+                    <li id="new-invoice"><ion-icon name="add-circle-outline"></ion-icon> <p>Create New Invoice</p></li>
+                    <li id="new-customer"><ion-icon name="person-add-outline"></ion-icon> <p>Add New Customer</p></li>
+                    <li id="customer-list"><ion-icon name="list-outline"></ion-icon> <p>List of Customers</p></li>
+                    <li id="paid-invoices"><ion-icon name="clipboard-outline"></ion-icon> <p>Paid Invoices</p></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2 viewing-box">
+                <h2>New Customer</h2>
+                <form action="#" class="customer-form">
+                    <label for="name"><h3>Name: </h3></label>
+                    <input type="text" id="name" name="name">
+                    <label for="mail"><h3>Email: </h3></label>
+                    <input type="text" id="mail" name="mail">
+                    <label for="address"><h3>Street Address: </h3></label>
+                    <input type="text" id="address" name="address">
+                    <label for="city"><h3>City: </h3></label>
+                    <input type="text" id="city" name="city">
+                    <label for="state"><h3>State: </h3></label>
+                    <input type="text" id="state" name="state">
+                    <label for="country"><h3>Country: </h3></label>
+                    <input type="text" id="country" name="country">
+                    <label for="zip"><h3>Zipcode: </h3></label>
+                    <input type="text" id="zip" name="zip" maxlength="5">
+                    <button name="request-button" class="submit-button" type="submit">Create Customer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="resources/js/bundle.js"></script>
+</body>
+</html>

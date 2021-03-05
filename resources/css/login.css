@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto; /* makes the row centered */
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 100%; 
+    padding: 0px; 
+    margin: 0px;  
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #82ecf0c4, #71cbcec4), url(../img/background-image.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.clearfix {zoom : 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block; 
+    height: 0;
+    visibility: hidden;
+}
+
+/* SECTION LOGIN & SIGN-UP */
+
+.login-signup-main {
+    padding-bottom: 30px;
+    border-radius: 30px;
+    transform: translateY(80%);
+}
+
+.whole-box {
+    background-color: #7fbde7b9;
+    border-radius: 30px; 
+    padding: 10px; 
+}
+
+.login h2, .invoice-details h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.information-box {
+    height: auto; 
+    width: 500px; 
+    background-color: #dff9fb;
+    margin: 0 auto; 
+    padding: 15px; 
+    border-radius: 20px;
+}
+
+.information-box label, .information-box input, .information-box button {
+    display: block;
+}
+
+.information-box input, .information-box select, .information-box button {
+    margin-bottom: 20px; 
+}
+
+.submit {
+    padding: 5px; 
+}
